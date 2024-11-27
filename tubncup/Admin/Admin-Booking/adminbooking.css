@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(35, 31, 32, 1);
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    width: max(200px, 15vw);
+    aspect-ratio: 30 / 5;
+}
+
+nav {
+    width: 50%;
+    max-width: 500px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    gap: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    color: rgba(228, 194, 103, 1);
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.bold-link {
+    font-weight: bold;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th:nth-child(1) { width: 13%; } /* Reserve Date */
+th:nth-child(2) { width: 12%;} /* Reserve Time */
+th:nth-child(3) { width: 20%; } /* Owner Name */
+th:nth-child(4) { width: 10%; } /* Pet Name */
+th:nth-child(5) { width: 12%; }  /* Breed */
+th:nth-child(6) { width: 9%; } /* Mobile Number */
+th:nth-child(7) { width: 8%; } /* Groomer */
+th:nth-child(8) { width: 20%; } /* Note */
+tbody tr:nth-child(odd) {
+    background-color: #ECEBE7;
+} 
